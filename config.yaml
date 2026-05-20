@@ -1,0 +1,38 @@
+# Gesture → key mapping
+# pyautogui key names: https://pyautogui.readthedocs.io/en/latest/keyboard.html
+# Phím đặc biệt: space, right, left, up, down, f5, volumeup, volumedown, nexttrack, prevtrack
+
+debounce_ms: 800          # Thời gian chờ giữa 2 lệnh (ms)
+camera_index: 0           # 0 = webcam mặc định
+
+gestures:
+  peace:                  # ✌️ 2 ngón (V)
+    key: space
+    description: "Play / Pause"
+
+  point_up:               # ☝️ 1 ngón trỏ
+    key: right
+    description: "Tua tới 5 giây"
+
+  middle_up:              # 🖕 ngón giữa
+    key: left
+    description: "Tua lùi 5 giây"
+
+  thumb_up:               # 👍 ngón cái lên
+    key: f5
+    description: "Refresh trang"
+
+  three_up:               # 🤟 3 ngón (trỏ+giữa+áp út)
+    key: up
+    description: "Volume tăng"
+
+  pinky_up:               # 🤙 ngón út
+    key: down
+    description: "Volume giảm"
+
+  shaka:                  # 🤙 cái + út (shaka)
+    key: nexttrack
+    description: "Bài tiếp theo"
+
+  # fist  → TẮT nhận cử chỉ (để tay tự nhiên không bị trigger nhầm)
+  # open  → BẬT lại nhận cử chỉ
